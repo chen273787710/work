@@ -1,14 +1,13 @@
 <?php
 
 namespace app\admin\controller;
+use app\lib\exception\BaseException;
+use think\Exception;
+
 class Index
 {
     public function index(){
-        $res = self::add();
-        return $res;
+       throw new Exception('错误');
     }
 
-    private static function add(){
-        return 1+1;
-    }
 }
